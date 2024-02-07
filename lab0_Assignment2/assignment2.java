@@ -43,4 +43,20 @@ public class assignment2
         return sum;
     }
 
+    public static int [] avgDiffArray(int [] array){
+        int [] diffArray = array;
+        int avg;
+        int sum = 0;
+        for (int i : array) {
+            sum+= i;
+        }
+        avg=sum/ array.length;
+        
+        for (int i = 0; i < diffArray.length; i++) {
+            diffArray[i] -= avg;
+        }
+        return diffArray;
+        
+
+    }
 }
