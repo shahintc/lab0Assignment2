@@ -31,4 +31,5 @@ public class assignment2
         }
         return sum;
     }
+
 }
