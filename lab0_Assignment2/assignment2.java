@@ -59,4 +59,32 @@ public class assignment2
         
 
     }
+
+    public static int findMaximum (int [] array)
+    {
+        int max = -1;
+        for(int number: array)
+        {
+            if (max < number) 
+            {
+                max = number;
+            }
+        }
+
+        return max;
+    }
+
+    public static int findMinimum (int [] array)
+    {
+        int min = 101;
+        for(int number: array)
+        {
+            if (min > number) 
+            {
+                min = number;    
+            }
+        }
+
+        return min;
+    }
 }
